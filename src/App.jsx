@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { v4 as uuid } from "uuid";
-import video from "./assets/video4.mp4";
+import video from "./assets/video.mp4";
 import {
   BackgroundVideo,
   Button,

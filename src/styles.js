@@ -1,6 +1,5 @@
 import { FcCheckmark, FcEmptyTrash } from 'react-icons/fc';
 import styled from 'styled-components';
-import neon from '../public/neon.jpg';
 
 export const Container = styled.div`
   /* background: linear-gradient(90deg, #383838 0%, #000000 81.25%); */
@@ -25,13 +24,18 @@ export const BackgroundVideo = styled.video`
 `;
 
 export const TodoList = styled.div`
-  background: #fff;
+  /* background: rgba(0, 0, 0, 0.8); */
+  background: #000;
   padding: 1.875rem 1.25rem;  // 30px 20px
   border-radius: 0.625rem;  // 10px
 
   ul {
     padding: 0;
     margin-top: 3.75rem;  // 60px
+  }
+
+  h3 {
+    color: #fff;
   }
 `;
 
