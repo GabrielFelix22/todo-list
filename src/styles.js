@@ -1,13 +1,27 @@
 import { FcCheckmark, FcEmptyTrash } from 'react-icons/fc';
 import styled from 'styled-components';
+import neon from '../public/neon.jpg';
 
 export const Container = styled.div`
-  background: linear-gradient(90deg, #383838 0%, #000000 81.25%);
+  /* background: linear-gradient(90deg, #383838 0%, #000000 81.25%); */
+  /* background-image: url("/public/neon.jpg"); */
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-size: cover;
+  background-position: center;
+`;
+
+export const BackgroundVideo = styled.video`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
 `;
 
 export const TodoList = styled.div`

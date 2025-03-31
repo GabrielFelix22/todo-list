@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { v4 as uuid } from "uuid";
+import video from "./assets/video4.mp4";
 import {
+  BackgroundVideo,
   Button,
   Check,
   Container,
@@ -43,7 +45,9 @@ function App() {
       <TodoList>
         <Input onChange={inputMudou} placeholder="O que tenha para fazer..." />
         <Button onClick={cliqueiNoBotao}>Adicionar</Button>
-
+        <BackgroundVideo autoPlay loop muted>
+          <source src={video} />
+        </BackgroundVideo>
         <ul>
           {list.length > 0 ? (
             list.map((item) => (
